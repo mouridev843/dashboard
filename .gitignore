@@ -1,0 +1,2 @@
+.DS_Store
+*/**/.DS_Store  # Pour ignorer tous les .DS_Store dans les sous-dossiersgit 

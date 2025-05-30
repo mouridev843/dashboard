@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: auto 1fr;
+
+  gap: 10px;
+}
+.sidebar {
+  grid-row: 1/-1;
+  background-color: #1992d4;
+  color: white;
+  display: grid;
+
+  grid-template-rows: auto auto 1fr;
+  padding: 20px;
+  border: 1px solid #ccc;
+  gap: 50px;
+}
+.logo-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo-icon h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.first-nav-menu {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  font-size: 1.2em;
+  align-self: center;
+}
+.second-nav-menu {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  font-size: 1.2em;
+  align-self: center;
+}
+.nav-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 2px;
+  gap: 5px;
+}
+.nav-item > span {
+  margin-left: 10px;
+}
+.header {
+  display: grid;
+  grid-template-rows: auto auto;
+  margin: 3px;
+  padding: 20px 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.header-top {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  margin: 3px;
+}
+.search-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 10px;
+  width: 75%;
+}
+.search-container input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+.user-info {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  gap: 20px;
+}
+.user-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.user-info span {
+  font-size: 1.3em;
+  align-self: flex-start;
+}
+.header-bottom {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+.title-info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.big-logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #1992d4;
+}
+.short-text {
+  font-size: 1.2em;
+  color: #333;
+}
+.btn-header-action {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+
+  padding-inline: 10px;
+}
+.btn {
+  padding: 10px 20px;
+  background-color: #1992d4;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+.btn:hover {
+  background-color: #147ab8;
+}
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 10px;
+  padding: 10px;
+}
+.projects-content {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+}
+.projects-content h2 {
+  font-size: 30px;
+  gap: 0;
+  margin: 0;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  align-items: center;
+}
+.project {
+  padding: 20px;
+  border-left: 5px solid #1992d4;
+}
+.project p {
+  padding: 5px;
+  font-size: 15px;
+}
+.project-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.aside-content {
+  display: grid;
+  grid-template-rows: auto;
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid #1992d4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.aside-content h2 {
+  background-color: #1992d4;
+  border-radius: 10px;
+  padding: 3px;
+  color: #fff;
+}
+.annoucements {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  padding: 10px;
+}
+.technologies {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  padding: 10px;
+}
+.technologies-card {
+  padding: 10px;
+}
+.technology-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+.flex-layup {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+}
+.flex-layup img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #147ab8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.flex-layup h3 {
+  font-size: 1.1em;
+  color: #333;
+  margin: 0;
+  font-weight: 700;
+  text-transform: capitalize;
+  flex-grow: 1;
+  text-align: left;
+}
